@@ -16,24 +16,12 @@ public abstract class Employee {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getNatInsNum() {
         return natInsNum;
     }
 
-    public void setNatInsNum(String natInsNum) {
-        this.natInsNum = natInsNum;
-    }
-
     public double getSalary() {
         return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 
     public void raiseSalary(double raise){

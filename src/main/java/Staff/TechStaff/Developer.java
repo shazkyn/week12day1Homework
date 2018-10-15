@@ -1,4 +1,13 @@
 package Staff.TechStaff;
 
-public class Developer {
+
+import Staff.Employee;
+
+public class Developer extends Employee {
+
+
+    public Developer(String name, String natInsNum, double salary) {
+        super(name, natInsNum, salary);
+    }
+
 }
