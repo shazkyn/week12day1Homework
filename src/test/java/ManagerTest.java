@@ -43,4 +43,16 @@ public class ManagerTest {
         manager.raiseSalary(-4000);
         assertEquals(20000, manager.getSalary(), 0.01);;
     }
+
+    @Test
+    public void canChangeName(){
+        manager.setName("Alex Ferguson");
+        assertEquals("Alex Ferguson", manager.getName());
+    }
+
+    @Test
+    public void cannotSetNullName(){
+        manager.setName(null);
+        assertEquals("Mr Lucas", manager.getName());
+    }
 }

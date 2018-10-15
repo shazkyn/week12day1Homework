@@ -40,4 +40,16 @@ public class DbAdminTest {
         dbAdmin.raiseSalary(-1000);
         assertEquals(15000, dbAdmin.getSalary(), 0.01);;
     }
+
+    @Test
+    public void canChangeName(){
+        dbAdmin.setName("Mr Anderson");
+        assertEquals("Mr Anderson", dbAdmin.getName());
+    }
+
+    @Test
+    public void cannotSetNullName(){
+        dbAdmin.setName(null);
+        assertEquals("Miss Brahms", dbAdmin.getName());
+    }
 }

@@ -49,4 +49,16 @@ public class DirectorTest {
         assertEquals(175000, director.getSalary(), 0.01);;
     }
 
+    @Test
+    public void canChangeName(){
+        director.setName("Steven Speilberg");
+        assertEquals("Steven Speilberg", director.getName());
+    }
+
+    @Test
+    public void cannotSetNullName(){
+        director.setName(null);
+        assertEquals("Peter Jackson", director.getName());
+    }
+
 }
