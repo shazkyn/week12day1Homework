@@ -6,11 +6,10 @@ public abstract class Employee {
     private String natInsNum;
     private double salary;
 
-    public Employee(String name, String natInsNum, int salary ) {
+    public Employee(String name, String natInsNum, double salary ) {
         this.name = name;
         this.natInsNum = natInsNum;
         this.salary = salary;
-
     }
 
     public String getName() {
@@ -21,7 +20,6 @@ public abstract class Employee {
         this.name = name;
     }
 
-
     public String getNatInsNum() {
         return natInsNum;
     }
@@ -30,7 +28,7 @@ public abstract class Employee {
         this.natInsNum = natInsNum;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -45,8 +43,6 @@ public abstract class Employee {
     public double payBonus(){
         return this.salary * 0.01;
     }
-
-
 }
 
 
