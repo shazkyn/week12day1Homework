@@ -22,7 +22,7 @@ public class DeveloperTest {
 
     @Test
     public void canPayBonus(){
-        assertEquals(2500, developer.payBonus(), 0.01);
+        assertEquals(400, developer.payBonus(), 0.01);
     }
     @Test
     public void canGetName(){
@@ -32,5 +32,11 @@ public class DeveloperTest {
     @Test
     public void canGetNatInsNum(){
         assertEquals("GB666999", developer.getNatInsNum());
+    }
+
+    @Test
+    public void cannotHaveNegativeRaise(){
+        developer.raiseSalary(-5000);
+        assertEquals(40000, developer.getSalary(), 0.01);;
     }
 }

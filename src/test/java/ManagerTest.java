@@ -37,4 +37,10 @@ public class ManagerTest {
     public void canGetNatInsNum(){
         assertEquals("GB123456", manager.getNatInsNum());
     }
+
+    @Test
+    public void cannotHaveNegativeRaise(){
+        manager.raiseSalary(-4000);
+        assertEquals(20000, manager.getSalary(), 0.01);;
+    }
 }

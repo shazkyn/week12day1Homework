@@ -34,4 +34,10 @@ public class DbAdminTest {
     public void canGetNatInsNum(){
         assertEquals("GB654321", dbAdmin.getNatInsNum());
     }
+
+    @Test
+    public void cannotHaveNegativeRaise(){
+        dbAdmin.raiseSalary(-1000);
+        assertEquals(15000, dbAdmin.getSalary(), 0.01);;
+    }
 }
