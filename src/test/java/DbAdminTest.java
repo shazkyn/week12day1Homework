@@ -1,4 +1,3 @@
-import Staff.Management.Manager;
 import Staff.TechStaff.DbAdmin;
 import org.junit.Before;
 import org.junit.Test;
